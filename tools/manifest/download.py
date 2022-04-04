@@ -1,5 +1,4 @@
 import argparse
-import bz2
 import gzip
 import json
 import lzma
@@ -64,10 +63,8 @@ def score_name(name):
     if name.startswith("MANIFEST-") or name.startswith("MANIFEST."):
         if name.endswith("json.xz"):
             return 1
-        if name.endswith(".json.bz2"):
-            return 2
         if name.endswith(".json.gz"):
-            return 3
+            return 2
     return None
 
 
@@ -136,12 +133,6 @@ def download_manifest(
             try:
                 decompressed = lzma.decompress(resp.read())
             except lzma.LZMAError:
-                logger.warning("Failed to decompress downloaded file")
-                continue
-        elif url.endswith(".bz2"):
-            try:
-                decompressed = bz2.decompress(resp.read())
-            except OSError:
                 logger.warning("Failed to decompress downloaded file")
                 continue
         elif url.endswith(".gz"):

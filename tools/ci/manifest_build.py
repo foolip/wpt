@@ -1,4 +1,3 @@
-import bz2
 import gzip
 import json
 import logging
@@ -46,7 +45,6 @@ def create_manifest() -> bytes:
 def compress_manifest(data: bytes) -> Dict[str, bytes]:
     return {
         "gz": gzip.compress(data, compresslevel=9),
-        "bz2": bz2.compress(data, compresslevel=9),
         "xz": lzma.compress(data, format=lzma.FORMAT_XZ,
                             preset=(lzma.PRESET_DEFAULT | lzma.PRESET_EXTREME))
     }
