@@ -472,6 +472,65 @@ SET TIMEOUT: css/mediaqueries/min-width-tables-001.html
 SET TIMEOUT: css/css-text/crashtests/rendering-rtl-bidi-override-crash.html
 SET TIMEOUT: resource-timing/resources/run-async-tasks-promise.js
 
+# CSS tests that used to be at the top level and weren't subject to lints
+MISSING-LINK: css/css-fonts/matching/fixed-stretch-style-over-weight.html
+MISSING-LINK: css/css-fonts/matching/stretch-distance-over-weight-distance.html
+MISSING-LINK: css/css-fonts/matching/style-ranges-over-weight-direction.html
+MISSING-LINK: css/css-fonts/variations/font-parse-numeric-stretch-style-weight.html
+MISSING-LINK: css/css-fonts/variations/variable-box-font.html
+MISSING-LINK: css/css-fonts/variations/variable-gpos-m2b.html
+MISSING-LINK: css/css-fonts/variations/variable-gsub.html
+MISSING-LINK: css/css-scroll-anchoring/abspos-containing-block-outside-scroller.html
+MISSING-LINK: css/css-scroll-anchoring/abspos-contributes-to-static-parent-bounds.html
+MISSING-LINK: css/css-scroll-anchoring/ancestor-change-heuristic.html
+MISSING-LINK: css/css-scroll-anchoring/anchor-updates-after-explicit-scroll.html
+MISSING-LINK: css/css-scroll-anchoring/anchoring-with-bounds-clamping-div.html
+MISSING-LINK: css/css-scroll-anchoring/anchoring-with-bounds-clamping.html
+MISSING-LINK: css/css-scroll-anchoring/anonymous-block-box.html
+MISSING-LINK: css/css-scroll-anchoring/basic.html
+MISSING-LINK: css/css-scroll-anchoring/clipped-scrollers-skipped.html
+MISSING-LINK: css/css-scroll-anchoring/descend-into-container-with-float.html
+MISSING-LINK: css/css-scroll-anchoring/descend-into-container-with-overflow.html
+MISSING-LINK: css/css-scroll-anchoring/exclude-fixed-position.html
+MISSING-LINK: css/css-scroll-anchoring/inline-block.html
+MISSING-LINK: css/css-scroll-anchoring/negative-layout-overflow.html
+MISSING-LINK: css/css-scroll-anchoring/opt-out.html
+MISSING-LINK: css/css-scroll-anchoring/position-change-heuristic.html
+MISSING-LINK: css/css-scroll-anchoring/start-edge-in-block-layout-direction.html
+MISSING-LINK: css/css-scroll-anchoring/subtree-exclusion.html
+MISSING-LINK: css/css-scroll-anchoring/wrapped-text.html
+MISSING-LINK: css/css-typed-om/CSSMatrixComponent-DOMMatrix-mutable.html
+MISSING-LINK: css/css-typed-om/declared-styleMap-accepts-inherit.html
+MISSING-LINK: css/cssom-view/DOMRectList.html
+MISSING-LINK: css/cssom-view/elementFromPoint-002.html
+MISSING-LINK: css/cssom-view/elementFromPoint-003.html
+MISSING-LINK: css/cssom-view/elementFromPoint.html
+MISSING-LINK: css/cssom-view/elementScroll.html
+MISSING-LINK: css/cssom-view/elementsFromPoint-iframes.html
+MISSING-LINK: css/cssom-view/elementsFromPoint-invalid-cases.html
+MISSING-LINK: css/cssom-view/elementsFromPoint-shadowroot.html
+MISSING-LINK: css/cssom-view/elementsFromPoint-simple.html
+MISSING-LINK: css/cssom-view/elementsFromPoint-svg.html
+MISSING-LINK: css/cssom-view/elementsFromPoint-table.html
+MISSING-LINK: css/cssom-view/elementsFromPoint.html
+MISSING-LINK: css/cssom-view/historical.html
+MISSING-LINK: css/cssom-view/HTMLBody-ScrollArea_quirksmode.html
+MISSING-LINK: css/cssom-view/mouseEvent.html
+MISSING-LINK: css/cssom-view/negativeMargins.html
+MISSING-LINK: css/cssom-view/offsetTopLeftInScrollableParent.html
+MISSING-LINK: css/cssom-view/scrolling-no-browsing-context.html
+MISSING-LINK: css/cssom-view/scrolling-quirks-vs-nonquirks.html
+MISSING-LINK: css/cssom-view/scrollingElement.html
+MISSING-LINK: css/cssom-view/scrollIntoView-shadow.html
+MISSING-LINK: css/cssom-view/scrollIntoView-smooth.html
+MISSING-LINK: css/cssom-view/scrollTop-display-change.html
+
+# TODO https://github.com/web-platform-tests/wpt/issues/5770
+MISSING-LINK: css/css-highlight-api/idlharness.window.js
+MISSING-LINK: css/geometry/*.worker.js
+MISSING-LINK: css/geometry/*.any.js
+MISSING-LINK: css/filter-effects/*.any.js
+
 # Tests that use WebKit/Blink testing APIs
 LAYOUTTESTS APIS: import-maps/data-driven/resources/test-helper-iframe.js
 LAYOUTTESTS APIS: resources/chromium/enable-hyperlink-auditing.js
